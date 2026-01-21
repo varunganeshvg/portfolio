@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Portal – Project Details</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<section class="project-detail">
+
+  <h1>Library Management Portal</h1>
+
+  <p class="project-intro">
+    A role-based library management system designed to control access to educational
+    resources using authentication, authorization, and structured backend services.
+  </p>
+
+  <a href="https://libraryportalvg.netlify.app" target="_blank" class="btn primary">
+    Live Project
+  </a>
+
+</section>
+
+<hr class="divider">
+
+<!-- AUTH SECTION -->
+<section class="project-section reveal">
+
+  <h2>Authentication & Role Management</h2>
+
+  <p>
+    The application uses a centralized authentication mechanism where users log in
+    as one of three roles: <strong>Admin</strong>, <strong>Staff</strong>, or <strong>Student</strong>.
+    Upon successful login, a token is generated and used to authorize access
+    throughout the application.
+  </p>
+
+  <div class="project-images">
+    <img src="../assets/images/library/login.png" alt="Login Page">
+  </div>
+
+</section>
+
+<hr class="divider">
+
+<!-- ADMIN SECTION -->
+<section class="project-section reveal">
+
+  <h2>Admin Module</h2>
+
+  <p>
+    The Admin has complete control over the system. After logging in, the Admin can:
+  </p>
+
+  <ul>
+    <li>Create and manage staff accounts</li>
+    <li>Assign staff to specific classes and subjects</li>
+    <li>View all registered students and staff</li>
+    <li>Control how educational resources are distributed</li>
+  </ul>
+
+  <div class="project-images">
+    <img src="../assets/images/library/admin-dashboard.png" alt="Admin Dashboard">
+  </div>
+
+</section>
+
+<hr class="divider">
+
+<!-- ARCHITECTURE -->
+<section class="project-section reveal">
+
+  <h2>System Architecture</h2>
+
+  <p>
+    The system follows a service-oriented approach with clear separation of concerns:
+  </p>
+
+  <ul>
+    <li><strong>Auth Service:</strong> Handles login, registration, token creation, and validation</li>
+    <li><strong>Book Service:</strong> Manages book uploads, class mapping, and access control</li>
+  </ul>
+
+  <p>
+    This separation improves scalability, security, and maintainability of the application.
+  </p>
+
+</section>
+
+<footer>
+  © 2026 Varun Ganesh V
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

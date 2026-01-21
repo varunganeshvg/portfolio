@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ---------- COMMON ---------- */
+section {
+  padding: 70px 10%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #1e293b;
+  margin: 0 10%;
+}
+
+/* ---------- HERO ---------- */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero-inner {
+  text-align: center;
+  max-width: 800px;
+}
+.profile-pic {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+}
+
+.hero-tagline {
+  margin: 20px 0;
+  font-size: 1.05rem;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+}
+
+/* LEFT SIDE - 40% */
+.hero-image {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+}
+
+/* RIGHT SIDE - 60% */
+.hero-content {
+  flex: 6;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  padding: 11px 22px;
+  border-radius: 6px;
+  margin: 6px;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.primary {
+  background: var(--accent);
+  color: #000;
+}
+
+.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* ---------- REVEAL ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- ABOUT ---------- */
+.about-main {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+/* ---------- SKILLS ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.skill-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.skill-card span {
+  display: inline-block;
+  margin: 6px 6px 0 0;
+  padding: 6px 10px;
+  background: #020617;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* ---------- EDUCATION ---------- */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.edu-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* ---------- PROJECTS ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.project-buttons {
+  margin-top: 15px;
+}
+
+.tech {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* ---------- CONTACT ---------- */
+#contact {
+  text-align: center;
+}
+
+.contact-sub {
+  margin-bottom: 20px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-grid a {
+  background: var(--card);
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: var(--text);
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin: 10px 0 20px;
+}
+
+.hero-tagline {
+  max-width: 520px;
+  margin-bottom: 25px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+.profile-pic {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top; /* ✅ THIS FIXES HEAD CUT */
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+};
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}

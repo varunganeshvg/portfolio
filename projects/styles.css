@@ -1,0 +1,17 @@
+.project-images {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-images img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}

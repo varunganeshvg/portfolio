@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Application – Project Details</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- ================= PROJECT INTRO ================= -->
+<section class="project-detail">
+
+  <h1>Social Media Web Application</h1>
+
+  <p class="project-intro">
+    A social media platform inspired by Instagram, currently under development,
+    focused on scalable backend architecture, authentication, and service separation
+    using microservices.
+  </p>
+
+  <p class="tech">
+    Status: <strong>Under Development</strong>
+  </p>
+
+</section>
+
+<hr class="divider">
+
+<!-- ================= AUTH SERVICE ================= -->
+<section class="project-section reveal">
+
+  <h2>Authentication Service</h2>
+
+  <p>
+    The authentication service is responsible for managing user identity and security
+    across the platform. It handles user registration, login, and token-based
+    authentication.
+  </p>
+
+  <ul>
+    <li>User registration with encrypted password storage</li>
+    <li>Login authentication using generated access tokens</li>
+    <li>Token validation for protected endpoints</li>
+    <li>Role-independent access for standard users</li>
+  </ul>
+
+</section>
+
+<hr class="divider">
+
+<!-- ================= USER PROFILE SERVICE ================= -->
+<section class="project-section reveal">
+
+  <h2>User Profile & Account Management</h2>
+
+  <p>
+    This module manages user profile information and account-related data. Each user
+    has a dedicated profile that can be viewed and updated independently.
+  </p>
+
+  <ul>
+    <li>Profile creation and update</li>
+    <li>Public profile viewing</li>
+    <li>User-to-user relationship management (followers / following)</li>
+  </ul>
+
+</section>
+
+<hr class="divider">
+
+<!-- ================= POST & MEDIA SERVICE ================= -->
+<section class="project-section reveal">
+
+  <h2>Post & Media Service</h2>
+
+  <p>
+    The post service manages user-generated content such as posts, images, and captions.
+    Media uploads are handled separately to ensure performance and scalability.
+  </p>
+
+  <ul>
+    <li>Post creation with image uploads</li>
+    <li>Caption and metadata handling</li>
+    <li>Secure media storage and retrieval</li>
+    <li>Post visibility control</li>
+  </ul>
+
+</section>
+
+<hr class="divider">
+
+<!-- ================= INTERACTIONS ================= -->
+<section class="project-section reveal">
+
+  <h2>User Interactions</h2>
+
+  <p>
+    Interaction features allow users to engage with content and other users across
+    the platform.
+  </p>
+
+  <ul>
+    <li>Like and comment functionality</li>
+    <li>Post sharing mechanisms</li>
+    <li>Feed generation based on user activity</li>
+  </ul>
+
+</section>
+
+<hr class="divider">
+
+<!-- ================= SYSTEM ARCHITECTURE ================= -->
+<section class="project-section reveal">
+
+  <h2>System Architecture</h2>
+
+  <p>
+    The application follows a microservice-oriented architecture, where each core
+    functionality is separated into independent services.
+  </p>
+
+  <ul>
+    <li>Authentication Service – handles login, tokens, and security</li>
+    <li>User Service – manages profiles and relationships</li>
+    <li>Post Service – handles posts, media, and interactions</li>
+  </ul>
+
+  <p>
+    This architecture allows independent development, easier scaling, and improved
+    maintainability as the application grows.
+  </p>
+
+</section>
+
+<footer>
+  © 2026 Varun Ganesh V
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
